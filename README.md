@@ -76,7 +76,7 @@ Then the Start Price and End Price loops within the next `i`:
 
 And then we needed to increase the `tickerIndex` variable to repeat the process for all the stocks before we end the `i`:
 ```
-If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
             
                 tickerIndex = tickerIndex + 1
         End If
