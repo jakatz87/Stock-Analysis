@@ -1,3 +1,5 @@
+#VBA For Stock Analysis
+
 ##Project Overview
 
 Our friend Steve is working on giving financial advice for investing in a select group of green energy stocks.  He has been given access to data for 12 different stocks and their performance in both 2017 and 2018 and he needs to have it analyzed.  We are working with the various tools within VBA to display the daily volume and the annual return for each stock in user-friendly format to allow Steve to give the best advice possible.
