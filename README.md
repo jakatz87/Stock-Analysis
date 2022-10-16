@@ -96,7 +96,7 @@ For i = 0 To 11
     
 Next i
 ```
-Number formats and color coding was included:
+Number formatting and color coding was included:
 ```
 Worksheets("All Stocks Analysis").Activate
     Range("A3:C3").Font.FontStyle = "Bold"
