@@ -85,7 +85,7 @@ And then we needed to increase the `tickerIndex` variable to repeat the process 
 ```
 
 #### Display
-Now that all our math was able to be coded for the appropriate data sets, it was time to ensure the data was displayed on a seperate sheet and in a visually intuitive format.
+Once all our math was able to be coded for the appropriate data sets, it was time to ensure the data was displayed on a seperate sheet and in a visually intuitive format.
 Cells had to be populated with appropriate data of `tickers(i)`, `tickerVolumes(i)`, and the calculated "Return":
 ```
 For i = 0 To 11
