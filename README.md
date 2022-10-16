@@ -1,20 +1,21 @@
-#VBA For Stock Analysis
+# VBA For Stock Analysis
 
-##Project Overview
+## Project Overview
 
 Our friend Steve is working on giving financial advice for investing in a select group of green energy stocks.  He has been given access to data for 12 different stocks and their performance in both 2017 and 2018 and he needs to have it analyzed.  We are working with the various tools within VBA to display the daily volume and the annual return for each stock in user-friendly format to allow Steve to give the best advice possible.
 
-##Results
+## Results
 
-###Raw Data
+### Raw Data
 The files we were able to use contained over 3000 rows of the daily activity for each stock in question: the opening price, daily high, daily low, closing price, adjusted close, and volume.  
 ![Image](https://github.com/jakatz87/stock-analysis/blob/main/resources/Raw%20Data%20Sample.png)
+
 For Steve’s purposes, we are focusing only on the total daily volume to determine the visibility of the stock and the annual return to determine its performance.  
 
-###Plan
+### Plan
 Although the math is simple (adding each stock’s daily volume and subtracting the final close of the year to the opening close of the year for a percentage), the coding in VBA was much more complex.
 
-####Arrays for Variables
+#### Arrays for Variables
 The most important aspect to this project was the use of arrays.  Since we are working with 12 different stocks, we had to create arrays for our variables to fit that number of outputs:
 ```
 Dim tickers(12) As String
@@ -38,8 +39,9 @@ Dim tickerVolumes(12) As Long
     Dim tickerEndingPrices(12) As Single
 ```
 
-####For Loops
-In order to calculate what we need, we had to run through each stock ticker’s data with For Loops and to that, we needed another variable:  tickerIndex.
+#### For Loops
+
+In order to calculate what we need, we had to run through each stock ticker’s data with For Loops and to that, we needed another variable:  `tickerIndex`.
 We first created the tickerVolumes loop:
 ```
 For i = 0 To 11
@@ -80,7 +82,7 @@ If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers
     Next i
 ```
 
-####Display
+#### Display
 Now that all our math was able to be coded for the appropriate data sets, it was time to ensure the data was displayed on a seperate sheet and in a visually intuitive format.
 Cells had to be populated with appropriate data:
 ```
@@ -119,12 +121,12 @@ Worksheets("All Stocks Analysis").Activate
     Next i
 ```
 
-###Conclusion
+### Conclusion
 From our new sheet, we can see that green stocks had a fantastic year in 2017, but not so in 2018.  For staying power in a bad year, Steve will be able to see two stocks that stand out:  RUN and ENPH.  
 ![image](https://github.com/jakatz87/stock-analysis/blob/main/resources/Advice%202017.png)   ![image](https://github.com/jakatz87/stock-analysis/blob/main/resources/Advice%202018.png)
 Both had high trading volumes in both years and both had outstanding performances to give Steve some valuable information for good advice.
 
-##Summary
+## Summary
 Refactoring Code
 The code we ended with refactored from an original code.  The benefits of using this method to create solutions is that the simple parts, like creating the ticker array and formatting the cells, are taken care of already.  When the outline of what we need is created, it is quite a relief to know that the simple pieces are already accounted for.  The disadvantage of using refactored code is the creative limit it imposes.  When using refactored code, we are limited to the broad programming direction in the code itself.
 
