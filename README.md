@@ -130,7 +130,7 @@ From our new sheet, we can see that green stocks had a fantastic year in 2017, b
 Both had high trading volumes in both years and both had outstanding performances to give Steve some valuable information for good advice.
 
 ## Summary
-Refactoring Code
+### Refactoring Code
 The code we ended with refactored from an original code.  The benefits of using this method to create solutions is that the simple parts, like creating the ticker array and formatting the cells, are taken care of already.  When the outline of what we need is created, it is quite a relief to know that the simple pieces are already accounted for.  The disadvantage of using refactored code is the creative limit it imposes.  When using refactored code, we are limited to the broad programming direction in the code itself.
 
 For this particular refactored code, we had to fully understand the general direction and then ensure the details, variables, and appropriate loops and conditionals can fit the direction.  When attempting to imagine different methods to solve this problem, I ended up making things more complicated than I needed.  For example, I was thinking of nested loops at one point.  I needed help a few times, but was able to make this reformatted concept work for me and Steve.
