@@ -8,6 +8,7 @@ Our friend Steve is working on giving financial advice for investing in a select
 
 ### Raw Data
 The files we were able to use contained over 3000 rows of the daily activity for each stock in question: the opening price, daily high, daily low, closing price, adjusted close, and volume.  
+
 ![Image](https://github.com/jakatz87/stock-analysis/blob/main/resources/Raw%20Data%20Sample.png)
 
 For Steve’s purposes, we are focusing only on the total daily volume to determine the visibility of the stock and the annual return to determine its performance.  
@@ -33,6 +34,7 @@ Dim tickers(12) As String
     tickers(10) = "TERP"
     tickers(11) = "VSLR"
 ```
+and
 ```
 Dim tickerVolumes(12) As Long
     Dim tickerStartingPrices(12) As Single
