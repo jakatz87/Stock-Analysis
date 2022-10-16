@@ -43,7 +43,7 @@ Dim tickerVolumes(12) As Long
 
 #### For Loops
 
-In order to calculate what we need, we had to run through each stock ticker’s data with For Loops and to that, we needed another variable:  `tickerIndex`.
+In order to calculate what we need, we had to run through each stock ticker’s data with For Loops and to do that, we needed another variable:  `tickerIndex`.
 We first created the tickerVolumes loop:
 ```
 For i = 0 To 11
