@@ -126,6 +126,7 @@ Worksheets("All Stocks Analysis").Activate
 ### Conclusion
 From our new sheet, we can see that green stocks had a fantastic year in 2017, but not so in 2018.  For staying power in a bad year, Steve will be able to see two stocks that stand out:  RUN and ENPH.  
 ![image](https://github.com/jakatz87/stock-analysis/blob/main/resources/Advice%202017.png)   ![image](https://github.com/jakatz87/stock-analysis/blob/main/resources/Advice%202018.png)
+
 Both had high trading volumes in both years and both had outstanding performances to give Steve some valuable information for good advice.
 
 ## Summary
