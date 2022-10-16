@@ -44,7 +44,7 @@ Dim tickerVolumes(12) As Long
 #### For Loops
 
 In order to calculate what we need, we had to run through each stock ticker’s data with For Loops and to do that, we needed another variable:  `tickerIndex`.
-We first created the tickerVolumes loop with an initial i and a new i:
+We first created the `tickerVolumes` loop with an initial `i` and a new `i`:
 ```
 For i = 0 To 11
          tickerVolumes(i) = 0
@@ -61,7 +61,7 @@ For i = 2 To RowCount
                 tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
       End If
 ```
-Then the Start Price and End Price loops within the next i:
+Then the Start Price and End Price loops within the next `i`:
 ```
       If Cells(i - 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
             
@@ -74,7 +74,7 @@ Then the Start Price and End Price loops within the next i:
       End If
 ```
 
-And then we needed to increase the tickerindex variable to repeat the process for all the stocks before we end the i:
+And then we needed to increase the `tickerIndex` variable to repeat the process for all the stocks before we end the `i`:
 ```
 If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
             
@@ -86,7 +86,7 @@ If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers
 
 #### Display
 Now that all our math was able to be coded for the appropriate data sets, it was time to ensure the data was displayed on a seperate sheet and in a visually intuitive format.
-Cells had to be populated with appropriate data:
+Cells had to be populated with appropriate data of `tickers(i)`, `tickerVolumes(i)`, and the calculated "Return":
 ```
 For i = 0 To 11
     Worksheets("All Stocks Analysis").Activate
